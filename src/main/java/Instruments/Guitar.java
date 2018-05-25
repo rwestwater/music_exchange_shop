@@ -9,7 +9,13 @@ public class Guitar extends Instrument implements IPlay {
         this.noOfStrings = noOfStrings;
     }
 
+
     public int getNoOfStrings() {
         return this.noOfStrings;
+    }
+
+    @Override
+    public String makeSound(){
+        return "You are playing the " + this.getType();
     }
 }

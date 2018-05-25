@@ -13,4 +13,9 @@ public class Trumpet extends Instrument implements IPlay {
     public int getNoOfKeys() {
         return noOfKeys;
     }
+
+    @Override
+    public String makeSound(){
+        return "You are playing the " + this.getType();
+    }
 }

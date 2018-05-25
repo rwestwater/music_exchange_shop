@@ -12,4 +12,8 @@ public class Piano extends Instrument implements IPlay {
         return this.octanes;
     }
 
+    @Override
+    public String makeSound(){
+        return "You are playing the " + this.getType();
+    }
 }

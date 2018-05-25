@@ -23,4 +23,9 @@ public class TrumpetTest {
     public void canGetNoise(){
         assertEquals("You are playing the Trumpet", trumpet.getNoise());
     }
+
+    @Test
+    public void canCalculateMarkup(){
+        assertEquals(100.0, trumpet.getMarkupPrice(), 0.01);
+    }
 }
