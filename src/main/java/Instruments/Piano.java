@@ -8,12 +8,8 @@ public class Piano extends Instrument implements IPlay {
     this.octanes = octanes;
         }
 
-
     public int getNoOfOctanes() {
         return this.octanes;
     }
-
-    ;
-
 
 }

@@ -11,12 +11,17 @@ public class PianoTest {
 
     @Before
     public void before() {
-        piano = new Piano("Grand", InstrumentType.PERCUSSION, MaterialType.WOOD, "White", 2000.00, 2500.00, "Roland", 8);
+        piano = new Piano("Grand Piano", InstrumentType.PERCUSSION, MaterialType.WOOD, "White", 2000.00, 2500.00, "Roland", 8);
     }
 
     @Test
     public void canGetNoOfOctanes() {
         assertEquals(8, piano.getNoOfOctanes());
+    }
+
+    @Test
+    public void canGetNoise(){
+        assertEquals("You are playing the Grand Piano", piano.getNoise());
     }
 
 }

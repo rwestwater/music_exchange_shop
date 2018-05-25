@@ -41,25 +41,28 @@ public class GuitarTest {
 
         @Test
         public void canGetSellingPrice(){
-        assertEquals(700, guitar.getSellingPrice(), 0.01);
+            assertEquals(700, guitar.getSellingPrice(), 0.01);
         }
 
         @Test
         public void canGetBrand(){
-        assertEquals("Gibson", guitar.getBrand());
+            assertEquals("Gibson", guitar.getBrand());
         }
 
         @Test
         public void canGetNoOfStrings(){
-        assertEquals(6, guitar.getNoOfStrings());
+            assertEquals(6, guitar.getNoOfStrings());
         }
 
         @Test
         public void canCalculateMarkup(){
-                assertEquals(150.0, guitar.getMarkupPrice(), 0.01);
-
-
+            assertEquals(150.0, guitar.getMarkupPrice(), 0.01);
         }
+
+    @Test
+    public void canGetNoise(){
+        assertEquals("You are playing the Guitar", guitar.getNoise());
+    }
 
 
 }
