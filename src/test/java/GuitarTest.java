@@ -59,10 +59,10 @@ public class GuitarTest {
             assertEquals(150.0, guitar.getMarkupPrice(), 0.01);
         }
 
-    @Test
-    public void canGetNoise(){
-        assertEquals("You are playing the Guitar", guitar.getNoise());
-    }
+        @Test
+        public void canGetNoise(){
+            assertEquals("You are playing the Guitar", guitar.getNoise());
+        }
 
 
 }
