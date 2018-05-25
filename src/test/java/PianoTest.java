@@ -26,7 +26,7 @@ public class PianoTest {
 
     @Test
     public void canCalculateMarkup(){
-        assertEquals(500.0, piano.getMarkupPrice(), 0.01);
+        assertEquals(500.0, piano.calculateMarkup(), 0.01);
     }
 
 }

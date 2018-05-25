@@ -1,6 +1,6 @@
 package Instruments;
 
-public abstract class Instrument implements IPlay{
+public abstract class Instrument implements IPlay, ISell{
 
     private String type;
     private InstrumentType instrumentType;
@@ -53,9 +53,10 @@ public abstract class Instrument implements IPlay{
         return "You are playing the " + type;
     }
 
-    public double getMarkupPrice(){
+    public double calculateMarkup(){
         return (this.sellingPrice - this.buyingPrice);
     }
+
 
 
 
