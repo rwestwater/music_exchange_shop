@@ -11,7 +11,6 @@ public abstract class Instrument implements IPlay{
     private String brand;
 
 
-
     public Instrument(String type, InstrumentType instrumentType, MaterialType materialType, String colour, double buyingPrice, double sellingPrice, String brand){
         this.type = type;
         this.instrumentType = instrumentType;
@@ -46,8 +45,8 @@ public abstract class Instrument implements IPlay{
         return this.sellingPrice;
     }
 
-    public String brand(){
-        return this.colour;
+    public String getBrand(){
+        return this.brand;
     }
 
 
